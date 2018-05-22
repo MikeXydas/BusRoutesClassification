@@ -18,7 +18,7 @@ testSet = pd.read_csv('test_set_a1.csv', converters={"Trajectory": literal_eval}
 #le.fit(trainSet["journeyPatternId"])
 #routeLabels = le.transform(trainSet["journeyPatternId"])
 
-for whichTest in xrange(testSet.shape[0] - 1):
+for whichTest in xrange(0, testSet.shape[0]):
     distances = list()
     trajs = trainSet['Trajectory'][whichTest]
     t, lon, lats = zip(*trajs)
@@ -37,7 +37,6 @@ for whichTest in xrange(testSet.shape[0] - 1):
         distances.append([distance, whichTrain])
 
     sortedDistances = sorted(distances)
-    print sortedDistances
 
     print "Which Test = ", whichTest," Time = ", time.time() - start_time
     for whichRoute in xrange(5):
@@ -45,7 +44,7 @@ for whichTest in xrange(testSet.shape[0] - 1):
         trajs = trainSet['Trajectory'][sortedDistances[whichRoute][1]]
         t, lon, lats = zip(*trajs)
         coords = zip(lats, lon)
-        gmap = gmplot.GoogleMapPlotter(lats[0], lon[0], 13)
+        gmap = gmplot.GoogleMapPlotter(lats[0], lon[0], 11)
         gmap.plot(lats, lon, 'green', edge_width=5)
         gmap.draw("A2_1htmls/route" + str(whichTest) + "/" + "predict"+str(whichRoute) + ".html")
     print ""
