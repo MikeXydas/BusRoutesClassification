@@ -2,29 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8dd3c904-a1a6-45e2-9c02-564ff6657d6c" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2_1htmls/route0/predict0.html" beforeDir="false" afterPath="$PROJECT_DIR$/A2_1htmls/route0/predict0.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2_1htmls/route0/predict1.html" beforeDir="false" afterPath="$PROJECT_DIR$/A2_1htmls/route0/predict1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2_1htmls/route0/predict2.html" beforeDir="false" afterPath="$PROJECT_DIR$/A2_1htmls/route0/predict2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2_1htmls/route0/predict3.html" beforeDir="false" afterPath="$PROJECT_DIR$/A2_1htmls/route0/predict3.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2_1htmls/route0/predict4.html" beforeDir="false" afterPath="$PROJECT_DIR$/A2_1htmls/route0/predict4.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2_1htmls/route1/predict0.html" beforeDir="false" afterPath="$PROJECT_DIR$/A2_1htmls/route1/predict0.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2_1htmls/route1/predict1.html" beforeDir="false" afterPath="$PROJECT_DIR$/A2_1htmls/route1/predict1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2_1htmls/route1/predict2.html" beforeDir="false" afterPath="$PROJECT_DIR$/A2_1htmls/route1/predict2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2_1htmls/route1/predict3.html" beforeDir="false" afterPath="$PROJECT_DIR$/A2_1htmls/route1/predict3.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2_1htmls/route1/predict4.html" beforeDir="false" afterPath="$PROJECT_DIR$/A2_1htmls/route1/predict4.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2_1htmls/route2/predict0.html" beforeDir="false" afterPath="$PROJECT_DIR$/A2_1htmls/route2/predict0.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2_1htmls/route2/predict1.html" beforeDir="false" afterPath="$PROJECT_DIR$/A2_1htmls/route2/predict1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2_1htmls/route2/predict2.html" beforeDir="false" afterPath="$PROJECT_DIR$/A2_1htmls/route2/predict2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2_1htmls/route2/predict3.html" beforeDir="false" afterPath="$PROJECT_DIR$/A2_1htmls/route2/predict3.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2_1htmls/route2/predict4.html" beforeDir="false" afterPath="$PROJECT_DIR$/A2_1htmls/route2/predict4.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2_1htmls/route3/predict0.html" beforeDir="false" afterPath="$PROJECT_DIR$/A2_1htmls/route3/predict0.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2_1htmls/route3/predict1.html" beforeDir="false" afterPath="$PROJECT_DIR$/A2_1htmls/route3/predict1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2_1htmls/route3/predict2.html" beforeDir="false" afterPath="$PROJECT_DIR$/A2_1htmls/route3/predict2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2_1htmls/route3/predict3.html" beforeDir="false" afterPath="$PROJECT_DIR$/A2_1htmls/route3/predict3.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2_1htmls/route3/predict4.html" beforeDir="false" afterPath="$PROJECT_DIR$/A2_1htmls/route3/predict4.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dtwNeighbors.py" beforeDir="false" afterPath="$PROJECT_DIR$/dtwNeighbors.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -40,8 +18,8 @@
           <file leaf-file-name="dtwNeighbors.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/dtwNeighbors.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="342">
-                  <caret line="21" column="18" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
+                <state relative-caret-position="190">
+                  <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
                   <folding>
                     <element signature="e#0#25#0" expanded="true" />
                   </folding>
@@ -96,7 +74,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="522" />
     <option name="y" value="43" />
     <option name="width" value="1398" />
@@ -198,16 +176,24 @@
     </task>
     <servers />
   </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="-11" width="1922" height="1029" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.09014233" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32921347" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32968238" />
       <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32921347" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32921347" />
       <window_info anchor="bottom" id="Python Console" order="7" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" />
@@ -283,8 +269,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/dtwNeighbors.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="21" column="18" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
+        <state relative-caret-position="190">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
           <folding>
             <element signature="e#0#25#0" expanded="true" />
           </folding>
