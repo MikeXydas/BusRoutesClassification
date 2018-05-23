@@ -20,7 +20,7 @@ testSet = pd.read_csv('test_set_a1.csv', converters={"Trajectory": literal_eval}
 
 for whichTest in xrange(0, testSet.shape[0]):
     distances = list()
-    trajs = trainSet['Trajectory'][whichTest]
+    trajs = testSet['Trajectory'][whichTest]
     t, lon, lats = zip(*trajs)
     coords = zip(lats, lon)
     testCoords = np.array(coords)
@@ -28,7 +28,7 @@ for whichTest in xrange(0, testSet.shape[0]):
     gmap.plot(lats, lon, 'green', edge_width=5)
     gmap.draw("A2_1htmls/route" + str(whichTest) + "/" + "original" + str(whichTest) + ".html")
     start_time = time.time()
-    for whichTrain in xrange(trainSet.shape[0] - 1):
+    for whichTrain in xrange(trainSet.shape[0]):
         trajs2 = trainSet['Trajectory'][whichTrain]
         t2, lon2, lats2 = zip(*trajs2)
         coords2 = zip(lats2, lon2)
@@ -48,22 +48,5 @@ for whichTest in xrange(0, testSet.shape[0]):
         gmap.plot(lats, lon, 'green', edge_width=5)
         gmap.draw("A2_1htmls/route" + str(whichTest) + "/" + "predict"+str(whichRoute) + ".html")
     print ""
-
-
-'''trajs = trainSet['Trajectory'][5]
-time, lon, lats = zip(*trajs)
-coords = zip(lats, lon)
-
-x = np.array(coords)
-
-trajs2 = testSet['Trajectory'][4]
-time2, lon2, lats2 = zip(*trajs2)
-coords2 = zip(lats2, lon2)
-
-y = np.array(coords2)
-
-distance, path= fastdtw(x, y, dist=haversine)
-
-print distance'''
 
 
