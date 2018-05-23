@@ -16,7 +16,6 @@ class lcss(object):
 
     def algorithm (self):
         #print len(self.X)
-        #arr = [[0 for j in xrange(0, len(self.Y) + 1)] for i in xrange(0, len(self.X) + 1)]
         arr = list()
         for i in xrange(0, len(self.X) + 1):
             arr.append(list())

@@ -1,8 +1,8 @@
 from gmplot import gmplot
-from sklearn import preprocessing
 from fastdtw import fastdtw
 from ast import literal_eval
 from haversine import haversine
+
 import time
 
 import pandas as pd
@@ -12,11 +12,6 @@ import random
 
 trainSet = pd.read_csv('train_set.csv', converters={"Trajectory": literal_eval})
 testSet = pd.read_csv('test_set_a1.csv', converters={"Trajectory": literal_eval})
-
-#trainSet = trainSet[0 : 20]
-#le = preprocessing.LabelEncoder()
-#le.fit(trainSet["journeyPatternId"])
-#routeLabels = le.transform(trainSet["journeyPatternId"])
 
 for whichTest in xrange(0, testSet.shape[0]):
     distances = list()
