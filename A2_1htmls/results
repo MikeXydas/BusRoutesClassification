@@ -1,38 +1,38 @@
 /home/mike/anaconda2/envs/tedAssign2/bin/python /home/mike/PycharmProjects/tedAssign2/dtwNeighbors.py
-Which Test =  0  Time =  249.30172801
-        Route =  00160001  Distance =  0.0
-        Route =  00160002  Distance =  92.516164238
-        Route =  00160002  Distance =  119.152739702
-        Route =  00160003  Distance =  131.841409047
-        Route =  00160002  Distance =  151.022325928
+Which Test =  0  Time =  143.814214945
+        Route =  01501001  Distance =  14.5863030466
+        Route =  01501001  Distance =  17.9485778436
+        Route =  01501001  Distance =  18.6216301589
+        Route =  01501001  Distance =  22.6486575927
+        Route =  01501001  Distance =  27.0261353232
 
-Which Test =  1  Time =  325.130940914
-        Route =  00161001  Distance =  54.2528145837
-        Route =  00161001  Distance =  475.545842063
-        Route =  00161001  Distance =  481.006175008
-        Route =  00161001  Distance =  792.059557218
-        Route =  00141001  Distance =  868.529705302
+Which Test =  1  Time =  118.295970917
+        Route =  01200001  Distance =  0.0
+        Route =  01200001  Distance =  4.20824163537
+        Route =  01200001  Distance =  4.64213908052
+        Route =  01200001  Distance =  4.79778649904
+        Route =  01200001  Distance =  4.97563395629
 
-Which Test =  2  Time =  180.060119867
-        Route =  00831001  Distance =  35.8700142758
-        Route =  00831001  Distance =  39.9392864436
-        Route =  00831001  Distance =  48.014364722
-        Route =  00831001  Distance =  48.1423270884
-        Route =  00831001  Distance =  58.7686972246
+Which Test =  2  Time =  150.129166842
+        Route =  00791001  Distance =  6.03696965946
+        Route =  00791001  Distance =  6.78083608132
+        Route =  00791001  Distance =  7.35123338884
+        Route =  00791001  Distance =  7.82802702994
+        Route =  00791001  Distance =  8.05847793115
 
-Which Test =  3  Time =  180.128247976
-        Route =  015B1001  Distance =  0.0
-        Route =  015B1001  Distance =  74.348303429
-        Route =  015B1001  Distance =  108.469025118
-        Route =  015B1001  Distance =  117.170434404
-        Route =  015B1001  Distance =  141.399812097
+Which Test =  3  Time =  133.404874086
+        Route =  00010002  Distance =  0.0
+        Route =  00010002  Distance =  3.75929231847
+        Route =  00010002  Distance =  3.96376305534
+        Route =  00010002  Distance =  7.22379628072
+        Route =  00010002  Distance =  8.65178724815
 
-Which Test =  4  Time =  181.968067169
-        Route =  015B0001  Distance =  0.0
-        Route =  015B0002  Distance =  65.8859426932
-        Route =  015B0001  Distance =  68.4756645686
-        Route =  015B0001  Distance =  70.9405135311
-        Route =  015B0001  Distance =  80.512257134
+Which Test =  4  Time =  132.032794952
+        Route =  01300001  Distance =  0.0
+        Route =  01300001  Distance =  4.81174147917
+        Route =  01300001  Distance =  6.50584937932
+        Route =  01300001  Distance =  6.73449516788
+        Route =  01300001  Distance =  8.72831967122
 
 
 Process finished with exit code 0
