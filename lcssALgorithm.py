@@ -1,11 +1,9 @@
-from sklearn import preprocessing
-from fastdtw import fastdtw
+from gmplot import gmplot
 from ast import literal_eval
 from haversine import haversine
-import time
 
 import pandas as pd
-import numpy as np
+import time
 
 
 class lcss(object):
@@ -15,7 +13,6 @@ class lcss(object):
 
 
     def algorithm (self):
-        #print len(self.X)
         arr = list()
         for i in xrange(0, len(self.X) + 1):
             arr.append(list())
@@ -30,7 +27,8 @@ class lcss(object):
                     arr[i][j] = max(arr[i][j-1], arr[i-1][j])
         return arr
 
-def printLcss(X,Y,resultArray):
+
+def backtrackLcss(X,Y,resultArray):
     pointslist=list()
     i = len(X)
     j = len(Y)
@@ -45,29 +43,73 @@ def printLcss(X,Y,resultArray):
         else:
             j -= 1
 
-    print pointslist
+    return pointslist
 
-#def drawMap(redPointList, allPoints):
+
+def pointsToCoords(pointsList, coordsTrain):
+    coords = list()
+    for whichPoint in pointsList:
+        coords.append(coordsTrain[whichPoint])
+    return coords
+
+
+def drawMap(redPointList, trainCoords, testCoords, whichTest, whichRoute):
+    lats, lon = zip(*trainCoords)
+    gmap = gmplot.GoogleMapPlotter(lats[0], lon[0], 11)
+    gmap.plot(lats, lon, 'green', edge_width=4)
+
+
+    if len(redPointList) == 1:
+        redPointList = list()
+    for i in xrange(len(redPointList)):
+        if i == 0:
+            if redPointList[i] != redPointList[i+1] - 1:
+                redPointList[i] = -1
+        elif i == len(redPointList) - 1:
+            if redPointList[i] !=redPointList[i-1] + 1:
+                redPointList[i] = -1
+        elif redPointList[i] != redPointList[i-1] + 1 and redPointList[i] != redPointList[i+1] - 1:
+            redPointList[i] = -1
+
+    redPointList = [x for x in redPointList if x != -1]
+
+
+    redPointList.append(-1)
+    redlist = list()
+    redpointer = 0
+    while redpointer < len(redPointList):
+        if redPointList[redpointer] == -1:
+            break
+        elif redPointList[redpointer] + 1 == redPointList[redpointer + 1]:
+            redlist.append(redPointList[redpointer])
+        else:
+            redlist.append(redPointList[redpointer])
+            lats, lon = zip(*pointsToCoords(redlist, testCoords))
+            gmap.plot(lats, lon, 'red', edge_width=4)
+            redlist=list()
+        redpointer += 1
+
+    gmap.draw("A2_2htmls/route" + str(whichTest) + "/" + "predict" + str(whichRoute) + ".html")
+
 
 
 trainSet = pd.read_csv('train_set.csv', converters={"Trajectory": literal_eval})
 testSet = pd.read_csv('test_set_a2.csv', converters={"Trajectory": literal_eval})
-trainSet = trainSet[0:50]
+#trainSet = trainSet[0:50]
 
 
 for whichTest in xrange(0, testSet.shape[0]):
+    start_time = time.time()
     finalArrays = list()
-    print ""
-    print " <<< test = ", whichTest, " >>>"
+    print " <<< Test = ", whichTest, " >>>"
     trajs = testSet['Trajectory'][whichTest]
     t, lon, lats = zip(*trajs)
     coordsTest = zip(lats, lon)
-    #testCoords = np.array(coords)
     for whichTrain in xrange(trainSet.shape[0]):
         trajs = trainSet['Trajectory'][whichTrain]
         t, lon, lats = zip(*trajs)
         coordsTrain = zip(lats, lon)
-        arr = lcss(coordsTest, coordsTrain)
+        arr = lcss(coordsTrain, coordsTest)
 
         result = arr.algorithm()
         biggestSubseq = result[len(result) - 1][len(result[0]) - 1]
@@ -82,9 +124,19 @@ for whichTest in xrange(0, testSet.shape[0]):
 
         finalArrays = sorted(finalArrays, key=lambda x: int(x[1]))
 
+    lats, lon = zip(*coordsTest)
+    gmap = gmplot.GoogleMapPlotter(lats[0], lon[0], 11)
+    gmap.plot(lats, lon, 'green', edge_width=4)
+    gmap.draw("A2_2htmls/route" + str(whichTest) + "/" + "original" + str(whichTest) + ".html")
 
+    count = 0
     for whichFinal in finalArrays:
         trajs = trainSet['Trajectory'][whichFinal[0]]
         t, lon, lats = zip(*trajs)
         coordsTrain = zip(lats, lon)
-        printLcss(coordsTest, coordsTrain, whichFinal[2])
+        matchingPoints = backtrackLcss(coordsTrain, coordsTest, whichFinal[2])
+        print "     JP_ID:", trainSet['journeyPatternId'][whichFinal[0]], " | Matching points = ", whichFinal[1]
+        drawMap(matchingPoints, coordsTrain, coordsTest, whichTest, 4 - count)
+        count += 1
+    print "Time = ", time.time() - start_time
+    print ""
