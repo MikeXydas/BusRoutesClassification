@@ -1,0 +1,44 @@
+/home/mike/anaconda2/envs/tedAssign2/bin/python /home/mike/PycharmProjects/tedAssign2/lcssALgorithm.py
+ <<< Test =  0  >>>
+     JP_ID: 040D1002  | Matching points =  75
+     JP_ID: 040D1002  | Matching points =  76
+     JP_ID: 040D1002  | Matching points =  76
+     JP_ID: 040D1002  | Matching points =  78
+     JP_ID: 040D1002  | Matching points =  78
+Time =  165.692155123
+
+ <<< Test =  1  >>>
+     JP_ID: 040D1002  | Matching points =  73
+     JP_ID: 040D1002  | Matching points =  74
+     JP_ID: 040D1002  | Matching points =  75
+     JP_ID: 040D1002  | Matching points =  78
+     JP_ID: 040D1002  | Matching points =  82
+Time =  177.837992907
+
+ <<< Test =  2  >>>
+     JP_ID: 067X0001  | Matching points =  40
+     JP_ID: 01451001  | Matching points =  40
+     JP_ID: 079A0001  | Matching points =  40
+     JP_ID: 00790001  | Matching points =  40
+     JP_ID: 01451008  | Matching points =  40
+Time =  83.7189731598
+
+ <<< Test =  3  >>>
+     JP_ID: 00790001  | Matching points =  59
+     JP_ID: 00790001  | Matching points =  59
+     JP_ID: 00790001  | Matching points =  59
+     JP_ID: 00790001  | Matching points =  59
+     JP_ID: 00790001  | Matching points =  59
+Time =  124.41511488
+
+ <<< Test =  4  >>>
+     JP_ID: 01200001  | Matching points =  71
+     JP_ID: 01200001  | Matching points =  71
+     JP_ID: 01200002  | Matching points =  72
+     JP_ID: 01200001  | Matching points =  73
+     JP_ID: 01200001  | Matching points =  73
+Time =  155.751547098
+
+
+Process finished with exit code 0
+

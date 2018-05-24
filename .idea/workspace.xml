@@ -2,9 +2,33 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8dd3c904-a1a6-45e2-9c02-564ff6657d6c" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/knnClassification.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lcssALgorithm.py" beforeDir="false" afterPath="$PROJECT_DIR$/lcssALgorithm.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/A2_2htmls/route0/predict0.html" beforeDir="false" afterPath="$PROJECT_DIR$/A2_2htmls/route0/predict0.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/A2_2htmls/route0/predict1.html" beforeDir="false" afterPath="$PROJECT_DIR$/A2_2htmls/route0/predict1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/A2_2htmls/route0/predict2.html" beforeDir="false" afterPath="$PROJECT_DIR$/A2_2htmls/route0/predict2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/A2_2htmls/route0/predict3.html" beforeDir="false" afterPath="$PROJECT_DIR$/A2_2htmls/route0/predict3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/A2_2htmls/route0/predict4.html" beforeDir="false" afterPath="$PROJECT_DIR$/A2_2htmls/route0/predict4.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/A2_2htmls/route1/predict0.html" beforeDir="false" afterPath="$PROJECT_DIR$/A2_2htmls/route1/predict0.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/A2_2htmls/route1/predict1.html" beforeDir="false" afterPath="$PROJECT_DIR$/A2_2htmls/route1/predict1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/A2_2htmls/route1/predict2.html" beforeDir="false" afterPath="$PROJECT_DIR$/A2_2htmls/route1/predict2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/A2_2htmls/route1/predict3.html" beforeDir="false" afterPath="$PROJECT_DIR$/A2_2htmls/route1/predict3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/A2_2htmls/route1/predict4.html" beforeDir="false" afterPath="$PROJECT_DIR$/A2_2htmls/route1/predict4.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/A2_2htmls/route2/predict0.html" beforeDir="false" afterPath="$PROJECT_DIR$/A2_2htmls/route2/predict0.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/A2_2htmls/route2/predict1.html" beforeDir="false" afterPath="$PROJECT_DIR$/A2_2htmls/route2/predict1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/A2_2htmls/route2/predict2.html" beforeDir="false" afterPath="$PROJECT_DIR$/A2_2htmls/route2/predict2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/A2_2htmls/route2/predict3.html" beforeDir="false" afterPath="$PROJECT_DIR$/A2_2htmls/route2/predict3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/A2_2htmls/route2/predict4.html" beforeDir="false" afterPath="$PROJECT_DIR$/A2_2htmls/route2/predict4.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/A2_2htmls/route3/predict0.html" beforeDir="false" afterPath="$PROJECT_DIR$/A2_2htmls/route3/predict0.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/A2_2htmls/route3/predict1.html" beforeDir="false" afterPath="$PROJECT_DIR$/A2_2htmls/route3/predict1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/A2_2htmls/route3/predict2.html" beforeDir="false" afterPath="$PROJECT_DIR$/A2_2htmls/route3/predict2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/A2_2htmls/route3/predict3.html" beforeDir="false" afterPath="$PROJECT_DIR$/A2_2htmls/route3/predict3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/A2_2htmls/route3/predict4.html" beforeDir="false" afterPath="$PROJECT_DIR$/A2_2htmls/route3/predict4.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/A2_2htmls/route4/predict0.html" beforeDir="false" afterPath="$PROJECT_DIR$/A2_2htmls/route4/predict0.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/A2_2htmls/route4/predict1.html" beforeDir="false" afterPath="$PROJECT_DIR$/A2_2htmls/route4/predict1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/A2_2htmls/route4/predict2.html" beforeDir="false" afterPath="$PROJECT_DIR$/A2_2htmls/route4/predict2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/A2_2htmls/route4/predict3.html" beforeDir="false" afterPath="$PROJECT_DIR$/A2_2htmls/route4/predict3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/A2_2htmls/route4/predict4.html" beforeDir="false" afterPath="$PROJECT_DIR$/A2_2htmls/route4/predict4.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/knnClassification.py" beforeDir="false" afterPath="$PROJECT_DIR$/knnClassification.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -14,37 +38,52 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="dtwNeighbors.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dtwNeighbors.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="213">
-              <caret line="35" column="73" selection-start-line="35" selection-start-column="37" selection-end-line="35" selection-end-column="73" />
-              <folding>
-                <element signature="e#0#25#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="lcssALgorithm.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lcssALgorithm.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="97" column="1" selection-start-line="97" selection-start-column="1" selection-end-line="97" selection-end-column="1" />
-              <folding>
-                <element signature="e#0#25#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="knnClassification.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/knnClassification.py">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.5">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="lcssALgorithm.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/lcssALgorithm.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="1444">
+                  <caret line="97" column="1" selection-start-line="97" selection-start-column="1" selection-end-line="97" selection-end-column="1" />
+                  <folding>
+                    <element signature="e#0#25#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="knnClassification.py" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/knnClassification.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="285">
+                  <caret line="36" column="27" lean-forward="true" selection-start-line="36" selection-start-column="27" selection-end-line="36" selection-end-column="27" />
+                  <folding>
+                    <element signature="e#0#27#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="dtwNeighbors.py" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/dtwNeighbors.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="247">
+                  <caret line="19" column="27" lean-forward="true" selection-start-line="15" selection-end-line="19" selection-end-column="27" />
+                  <folding>
+                    <element signature="e#0#25#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -74,10 +113,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="240" />
-    <option name="y" value="1" />
-    <option name="width" value="1396" />
-    <option name="height" value="965" />
+    <option name="y" value="88" />
+    <option name="width" value="1394" />
+    <option name="height" value="957" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -114,7 +152,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.lcssALgorithm">
+  <component name="RunManager" selected="Python.knnClassification">
     <configuration name="dataVisualisation" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="tedAssign2" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -146,6 +184,24 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dtwNeighbors.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="knnClassification" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="tedAssign2" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/knnClassification.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -192,9 +248,11 @@
       <item itemvalue="Python.dtwNeighbors" />
       <item itemvalue="Python.test" />
       <item itemvalue="Python.lcssALgorithm" />
+      <item itemvalue="Python.knnClassification" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.knnClassification" />
         <item itemvalue="Python.lcssALgorithm" />
         <item itemvalue="Python.test" />
         <item itemvalue="Python.dtwNeighbors" />
@@ -225,13 +283,13 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="-11" width="1922" height="1029" extended-state="6" />
+    <frame x="0" y="-4" width="1920" height="1021" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.09014233" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32921347" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.31797752" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.305618" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32921347" />
       <window_info anchor="bottom" id="Python Console" order="7" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -374,19 +432,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dtwNeighbors.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="35" column="73" selection-start-line="35" selection-start-column="37" selection-end-line="35" selection-end-column="73" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lcssALgorithm.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
+        <state relative-caret-position="1444">
           <caret line="97" column="1" selection-start-line="97" selection-start-column="1" selection-end-line="97" selection-end-column="1" />
           <folding>
             <element signature="e#0#25#0" expanded="true" />
@@ -394,8 +442,25 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/dtwNeighbors.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="19" column="27" lean-forward="true" selection-start-line="15" selection-end-line="19" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/knnClassification.py">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="36" column="27" lean-forward="true" selection-start-line="36" selection-start-column="27" selection-end-line="36" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#27#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
   </component>
 </project>
