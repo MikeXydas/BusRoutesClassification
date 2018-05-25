@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8dd3c904-a1a6-45e2-9c02-564ff6657d6c" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/knnClassification.py" beforeDir="false" afterPath="$PROJECT_DIR$/knnClassification.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lcssALgorithm.py" beforeDir="false" afterPath="$PROJECT_DIR$/lcssALgorithm.py" afterDir="false" />
-    </list>
+    <list default="true" id="8dd3c904-a1a6-45e2-9c02-564ff6657d6c" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,11 +11,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="dtwNeighbors.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="dtwNeighbors.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/dtwNeighbors.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="14" selection-start-line="14" selection-end-line="14" />
+            <state relative-caret-position="361">
+              <caret line="23" column="30" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="30" />
               <folding>
                 <element signature="e#0#25#0" expanded="true" />
               </folding>
@@ -51,7 +47,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dataVisualisation.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="dataVisualisation.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dataVisualisation.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="342">
@@ -101,6 +97,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -112,7 +109,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -130,7 +126,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.knnClassification">
+  <component name="RunManager" selected="Python.dtwNeighbors">
     <configuration name="dataVisualisation" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="tedAssign2" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -230,10 +226,10 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.dtwNeighbors" />
         <item itemvalue="Python.knnClassification" />
         <item itemvalue="Python.lcssALgorithm" />
         <item itemvalue="Python.test" />
-        <item itemvalue="Python.dtwNeighbors" />
         <item itemvalue="Python.dataVisualisation" />
       </list>
     </recent_temporary>
@@ -267,13 +263,13 @@
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12509145" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32921347" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.19948849" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32921347" />
       <window_info anchor="bottom" id="Python Console" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.2" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -287,6 +283,43 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/dtwNeighbors.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lcssALgorithm.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/knnClassification.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2204">
+          <caret line="126" column="49" selection-start-line="126" selection-start-column="49" selection-end-line="126" selection-end-column="49" />
+          <folding>
+            <element signature="e#0#27#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataVisualisation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="23" column="30" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/dtwNeighbors.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
@@ -504,16 +537,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dtwNeighbors.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lcssALgorithm.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="570">
@@ -538,6 +561,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
           <caret line="23" column="30" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dtwNeighbors.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="23" column="30" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
