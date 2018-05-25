@@ -3,6 +3,8 @@ from ast import literal_eval
 from haversine import haversine
 from sklearn.model_selection import KFold
 from sklearn.metrics import accuracy_score
+from pandas import DataFrame
+
 import time
 
 import pandas as pd
@@ -11,23 +13,21 @@ import numpy as np
 
 
 
-
 class KNN_Classifier(object):
     def __init__(self, numb_neighbors=5):
         self.numb_neighbors = numb_neighbors
+
     def fit(self, X, y):
         self.X = X
         self.y = y
         return self
 
-    #def return_neighbors(self, Test):
+    #With dtw find distance of the Test from each trainRoute
     def createDistances(self, Test):
         distances = list()
         testCoords = np.array(Test)
         #sortedDistances = list()
-        print self.X[1]
         for whichTrain in xrange(len(self.X)):
-            print whichTrain, " ", len(self.X)
             #print self.X[whichTrain]
             trajs2 = self.X[whichTrain]
             t2, lon2, lats2 = zip(*trajs2)
@@ -38,9 +38,9 @@ class KNN_Classifier(object):
 
         distRoute = zip(distances, self.y)
         sortedDistances = sorted(distRoute)
-
         topK = sortedDistances[0 : self.numb_neighbors]
-        print topK
+
+        #Perform majority voting
         candidates = list()
         votes = list()
         for i in topK:
@@ -66,6 +66,7 @@ class KNN_Classifier(object):
                 maxI = i
                 max = votes[i]
 
+        #return the route that hade the most votes
         return candidates[maxI][1]
 
 
@@ -79,39 +80,51 @@ class KNN_Classifier(object):
         results = list()
         for i in yCoords:
             results.append(self.createDistances(i))
-        print results
         return results
+
 
 trainSet = pd.read_csv('train_set.csv', converters={"Trajectory": literal_eval})
 testSet = pd.read_csv('test_set_a1.csv', converters={"Trajectory": literal_eval})
 trainSet = trainSet[0:200]
 
-
 allTrajs = list()
-
-for whichTest in xrange(0, testSet.shape[0]):
-    trajs2 = testSet['Trajectory'][whichTest]
-    t2, lon2, lats2 = zip(*trajs2)
-    coords2 = zip(lats2, lon2)
-    allTrajs.append(coords2)
-
-
 
 knn = KNN_Classifier()
 
-#knn.fit(trainSet['Trajectory'], trainSet['journeyPatternId'])
-#knn.predict(allTrajs)
+#Classification of test sets
+knn.fit(trainSet['Trajectory'], trainSet['journeyPatternId'])
+testResults = knn.predict(testSet['Trajectory'])
+listResults = list()
+
+for whichRes in xrange(len(testResults)):
+    listResults.append([whichRes, testResults[whichRes]])
+
+header = ["Test_Trip_ID", "Pattern_JourneyPatternID"]
+df2 = DataFrame(listResults, columns=header)
+
+df2.to_csv('testSet_JourneyPatternIDs.csv',  header=True, sep='\t', index=False)
+
+#Kfold cross-validation
 kf = KFold(n_splits=10, random_state=None, shuffle=True)
 
-for train_index, test_index in kf.split(trainSet['Trajectory']):
-    print train_index
-    #for i in xrange(len(train_index)):
-    X_train, X_test = trainSet['Trajectory'][train_index], trainSet['Trajectory'][test_index]
-    y_train, y_test = trainSet['journeyPatternId'][train_index], trainSet['journeyPatternId'][test_index]
+Xtrajs = list()
+Xjourneys = list()
+for whichTraj, whichJourneyId in zip(trainSet["Trajectory"], trainSet['journeyPatternId']):
+    Xtrajs.append(whichTraj)
+    Xjourneys.append(whichJourneyId)
+
+Xtrajs = np.array(Xtrajs)
+Xjourneys = np.array(Xjourneys)
+
+totalAcc = 0
+for train_index, test_index in kf.split(Xtrajs):
+    X_train, X_test = Xtrajs[train_index], Xtrajs[test_index]
+    y_train, y_test = Xjourneys[train_index], Xjourneys[test_index]
     knn.fit(X_train, y_train)
     y_predicted = knn.predict(X_test)
-    print "Acc = ", accuracy_score(y_test, y_predicted)
+    print "Accuracy: = ", accuracy_score(y_test, y_predicted)
 
+print " >>> Mean accuracy was: ", totalAcc / 10
 
 
 

@@ -27,7 +27,7 @@ class lcss(object):
                     arr[i][j] = max(arr[i][j-1], arr[i-1][j])
         return arr
 
-
+#Takes the array that lcss returns and returns the indexes of the biggest subsequence
 def backtrackLcss(X,Y,resultArray):
     pointslist=list()
     i = len(X)
@@ -45,14 +45,14 @@ def backtrackLcss(X,Y,resultArray):
 
     return pointslist
 
-
-def pointsToCoords(pointsList, coordsTrain):
-    coords = list()
+#Takes a list of indexes and returns the corresponding coordinates
+def pointsToCoords(pointsList, coords):
+    retCoords = list()
     for whichPoint in pointsList:
-        coords.append(coordsTrain[whichPoint])
-    return coords
+        retCoords.append(coords[whichPoint])
+    return retCoords
 
-
+#Draws the green line of the trainSet and then the longest subsequence (from the test)
 def drawMap(redPointList, trainCoords, testCoords, whichTest, whichRoute):
     lats, lon = zip(*trainCoords)
     gmap = gmplot.GoogleMapPlotter(lats[0], lon[0], 11)
@@ -66,7 +66,7 @@ def drawMap(redPointList, trainCoords, testCoords, whichTest, whichRoute):
             if redPointList[i] != redPointList[i+1] - 1:
                 redPointList[i] = -1
         elif i == len(redPointList) - 1:
-            if redPointList[i] !=redPointList[i-1] + 1:
+            if redPointList[i] != redPointList[i-1] + 1:
                 redPointList[i] = -1
         elif redPointList[i] != redPointList[i-1] + 1 and redPointList[i] != redPointList[i+1] - 1:
             redPointList[i] = -1
