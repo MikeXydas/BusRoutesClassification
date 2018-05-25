@@ -124,7 +124,7 @@ for train_index, test_index in kf.split(Xtrajs):
     y_predicted = knn.predict(X_test)
     print "Accuracy: = ", accuracy_score(y_test, y_predicted)
 
-print " >>> Mean accuracy was: ", totalAcc / 10
+print " >>> Mean accuracy was: ", float(totalAcc) / 10
 
 
 

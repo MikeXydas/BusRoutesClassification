@@ -33,7 +33,6 @@ def backtrackLcss(X,Y,resultArray):
     i = len(X)
     j = len(Y)
     while i > 0 and j > 0:
-        #print i, " ", j, " LenX = ", len(X), "LenY = ", len(Y), "ResLines = ", len(resultArray), "LenY = ", len(resultArray[0])
         if haversine(X[i - 1], Y[j - 1]) < 0.2:
             pointslist.insert(0, j-1)
             i -= 1
