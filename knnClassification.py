@@ -38,7 +38,7 @@ class KNN_Classifier(object):
 
         distRoute = zip(distances, self.y)
         sortedDistances = sorted(distRoute)
-        topK = sortedDistances[0 : self.numb_neighbors]
+        topK = sortedDistances[0: self.numb_neighbors]
 
         #Perform majority voting
         candidates = list()
@@ -85,13 +85,14 @@ class KNN_Classifier(object):
 
 trainSet = pd.read_csv('train_set.csv', converters={"Trajectory": literal_eval})
 testSet = pd.read_csv('test_set_a1.csv', converters={"Trajectory": literal_eval})
-trainSet = trainSet[0:200]
+trainSet = trainSet[0:600]
 
 allTrajs = list()
 
 knn = KNN_Classifier()
 
 #Classification of test sets
+print " >>> Test set classification begins..."
 knn.fit(trainSet['Trajectory'], trainSet['journeyPatternId'])
 testResults = knn.predict(testSet['Trajectory'])
 listResults = list()
@@ -104,6 +105,7 @@ df2 = DataFrame(listResults, columns=header)
 
 df2.to_csv('testSet_JourneyPatternIDs.csv',  header=True, sep='\t', index=False)
 
+print " >>> Cross-validation begins..."
 #Kfold cross-validation
 kf = KFold(n_splits=10, random_state=None, shuffle=True)
 
@@ -117,12 +119,14 @@ Xtrajs = np.array(Xtrajs)
 Xjourneys = np.array(Xjourneys)
 
 totalAcc = 0
+whichFold = 0
 for train_index, test_index in kf.split(Xtrajs):
     X_train, X_test = Xtrajs[train_index], Xtrajs[test_index]
     y_train, y_test = Xjourneys[train_index], Xjourneys[test_index]
     knn.fit(X_train, y_train)
     y_predicted = knn.predict(X_test)
-    print "Accuracy: = ", accuracy_score(y_test, y_predicted)
+    print "Accuracy of fold ", whichFold, ": ", accuracy_score(y_test, y_predicted)
+    whichFold += 1
 
 print " >>> Mean accuracy was: ", float(totalAcc) / 10
 
