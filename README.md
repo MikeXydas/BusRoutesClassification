@@ -2,7 +2,7 @@
 
 ## Introduction
 
-In this project the main goal is to classify bus routes to their matching line number using only their coordinates.
+In this project the main goal is to classify bus routes to their matching line number using only their coordinates.  
 **Collaborator: *Jim Oikonomou* https://github.com/JimOiko**
 
 ### What data do we have?
