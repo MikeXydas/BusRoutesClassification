@@ -3,6 +3,7 @@
 ## Introduction
 
 In this project the main goal is to classify bus routes to their matching line number using only their coordinates.  
+**Collaborator: *Jim Oikonomou* https://github.com/JimOiko**
 
 ### What data do we have?
 
@@ -21,11 +22,6 @@ algorithms:
 - **`DTW`**: Dynamic Time Wrapping (Already sorted on time field)
 - **`LCS`**: Longest Common Subsequence
 - **`KNN`**: K-Nearest Neighbors
-
-### Dataset sizes
-
-The original train_set that I used was triple the size of the one uploaded on this repo. I will propably set up a cloud that will have the one I used. However, you  
-will still be able to  see the effectivness of these algorithms.
 
 ## Running
 
