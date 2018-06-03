@@ -40,7 +40,7 @@ class KNN_Classifier(object):
         sortedDistances = sorted(distRoute)
         topK = sortedDistances[0: self.numb_neighbors]
 
-        #Perform majority voting
+        #Perform majority voting (should be changed to something more elegant)
         candidates = list()
         votes = list()
         for i in topK:
@@ -126,6 +126,7 @@ for train_index, test_index in kf.split(Xtrajs):
     knn.fit(X_train, y_train)
     y_predicted = knn.predict(X_test)
     print "Accuracy of fold ", whichFold, ": ", accuracy_score(y_test, y_predicted)
+    totalAcc += accuracy_score(y_test, y_predicted)
     whichFold += 1
 
 print " >>> Mean accuracy was: ", float(totalAcc) / 10
