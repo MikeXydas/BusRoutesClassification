@@ -25,13 +25,13 @@ algorithms:
 
 ## Running
 
-Set up the environment according to the requirements.txt. You will see that we have 4 .py. Each one will be explained in this README.
+Set up the environment according to the requirements.txt. You will see that we have 4 .py files. Each one will be explained in this README.
 The modules will take some time to be executed (depending on your computer).
 
 ## Modules explanation
 
-  First of all, you will see that I am using on all my modules the **haversine distance**. This formula takes into account the curve of the  
-  earth, offering us more accurate distance computation.  
+  First of all, you will see that I am using on all my modules the **haversine distance**.   
+  This formula takes into account the curve of the earth, offering us more accurate distance computation.  
   More on that: https://en.wikipedia.org/wiki/Haversine_formula
     
   Also, the output .html files of the modules can be found in the corresponding directories.
